@@ -6,76 +6,34 @@
   <title>Systematic - Appel à projets</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Systematic Rassemble et anime un écosystème d'excellence de 900 membres, dédié aux Deep Tech. Pôle de compétitivité mondial">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/burger.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- NAV BAR -->
 
+  <nav>
+    <div class="nav__logo">
+      <img src="/images/label_systematic.png" alt="logo Systematic">
+      <span>Paris Region Deep Tech Ecosystem</span>
+    </div>
 
+    <div class="nav__menu">
+      <i class="fa-solid fa-bars" title="Ouvrir le menu de navigation"></i>
+      <img src="/images/Icones_social.png" alt="logos representant les réseaux sociaux">
+      <img id="loupe" src="images/loupe.png" alt="Bouton pour ouvrir la barre de recherche">
+      <button class="btnnav button__violet">Adhérer au pôle</button>
+    </div>
+  </nav>
 
 
   <!-- BANNIERE -->
 
   <header>
-
-    <nav class="nav__main">
-      <div class="nav__main--logo">
-        <img src="/images/label_systematic.png" alt="logo Systematic">
-        <!-- <span>Paris Region Deep Tech Ecosystem</span> -->
-      </div>
-
-      <nav class="nav__main--menu" aria-label="Navigation interne et vers les réseaux sociaux de Systematic">
-
-
-        <div id="burger-menu">
-          <span></span>
-        </div>
-        
-        <div id="menu">
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Evenements</a></li>
-              <li><a href="#">A propos</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-
-        <!-- <i class="fa-solid fa-bars" title="Ouvrir le menu de navigation"></i> -->
-
-        <nav class="nav__main--menu--socials">
-          <ul>
-            <li><a href=""><img src="images/facebookViolet.png" alt="logo Facebook" title="facebook"></a></li>
-            <li><a href=""><img src="images/twitterViolet.png" alt="logo twitter" title="twitter"></a></li>
-            <li><a href=""><img src="images/linkedinViolet.png" alt="logo linkedIn" title="linkedIn"></a></li>
-            <li><a href=""><img src="images/RSSViolet.png" alt="logo RSS" title="Flux RSS"></a></li>
-
-          </ul>
-        </nav>
-
-        <img id="loupe" src="images/loupe.png" alt="Bouton pour ouvrir la barre de recherche">
-        <button class="btnnav button__violet">Adhérer au pôle</button>
-      </nav>
-    </nav>
-
-
-
     <div class="header__banniere">
-      <h1>Evenements</h1>
-
-      <div class="header__banniere--path">
-        <ul>
-          <li><a href="">Accueil /</a></li>
-          <li><a href="">Evenements /</a></li>
-          <li><a href=""> Nom de l'evenement</a></li>
-        </ul>
-      </div>
+      <img src="/images/banniere.jpg" alt="banniere">
     </div>
   </header>
 
@@ -84,29 +42,28 @@
   <main>
 
     <article>
-      <section class="event__entete">
+      <div class="event__entete">
         <h2>Nom de l'événement</h2>
         <ul>
-          <li><strong>Date:</strong> 16 Juin 2020 - 17 Juin 2020</li>
-          <li><strong>Horaires:</strong> 09h00 - 18h00</li>
-          <li><strong>Adresse:</strong> Ecole Polytechnique - route de Saclay, 91128</li>
-          <li><strong>Organisateur:</strong> Systematic</li>
-          <li><strong>Prix: 49.00€</strong> <br><span><em>Gratuit pour les membres à jour de
+          <li style="order: 1"><strong>Date:</strong> 16 Juin 2020 - 17 Juin 2020</li>
+          <li style="order: 3"><strong>Horaires:</strong> 09h00 - 18h00</li>
+          <li style="order: 5"><strong>Adresse:</strong> Ecole Polytechnique - route de Saclay, 91128</li>
+          <li style="order: 2"><strong>Organisateur:</strong> Systematic</li>
+          <li style="order: 4"><strong>Prix: 49.00€</strong> <br><span><em>Gratuit pour les membres à jour de
                 cotisation</em></span></li>
-          <li class=><button class="button__violet">En savoir Plus</button></li>
         </ul>
-
-      </section>
+        <button class="button__violet puce">En savoir Plus</button>
+      </div>
 
       <div class="event__entete--tags">
         <h3>Hubs et enjeux:</h3>
         <p class="tag Optics">Optics & Photonics</p>
       </div>
 
+      <hr>
 
-
-      <section class="event__text">
-        <img src="images/Image_event.png" alt="Bannière promotionnelle de l'évenement">
+      <div class="event__text">
+        <img src="images/Image_event.png">
         <p><strong>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolore quidem eum fuga illo iure dolor
             libero labore nihil similique ab cupiditate, repudiandae tenetur earum laboriosam adipisci in corrupti
@@ -129,11 +86,10 @@
           voluptas modi veniam rerum tenetur quos quod fugiat? Soluta nesciunt, corporis at, molestias modi ipsum
           tenetur vitae aspernatur dolores voluptate earum sed fugiat impedit animi tempora ex itaque, ea expedita!
           Voluptates, quod cupiditate eaque provident minus iste rerum quia vel, <span>consequatur eum </span>eveniet
-          aperiam doloribus culpa eligendi ducimus, fugiat ut? Molestias enim laborum eius cumque nemo! Vel.
-        </p>
-      </section>
+          aperiam doloribus culpa eligendi ducimus, fugiat ut? Molestias enim laborum eius cumque nemo! Vel.</p>
+          </div>
 
-      <section class="event__footer">
+      <div class="event__footer">
         <div class="event__footer--inscription">
 
           <hr>
@@ -142,7 +98,7 @@
           <div class="event__footer--inscription--card">
 
             <div class="event__footer--inscription--card--image">
-              <img src="images/inscription_ billeterie.png" alt="Inscription à la billeterie">
+              <img src="images/inscription_ billeterie.png" alt="">
             </div>
 
             <div class="event__footer--inscription--card--text">
@@ -156,16 +112,7 @@
 
 
         <div class="event__footer--map">
-          <!-- <img src="images/map.png" alt="Cartes montrant l'emplacement de l'événement"> -->
-          <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="740" height="300" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=ECOLE%20POLYTECHNIQUE%20-%20ROUTE%20DE%20SACLAY,%2091128&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                href="https://2piratebay.org"></a><br>
-              <a href="https://www.embedgooglemap.net"></a>
-             
-            </div>
-          </div>
+          <img src="images/map.png" alt="Cartes montrant l'emplacement de l'événement">
         </div>
 
         <div class="event__footer--socials">
@@ -173,28 +120,19 @@
             <p>Partager:</p>
           </div>
           <div class="event__footer--icones">
-
-            <ul>
-              <li><a href=""><img src="images/facebookViolet.png" alt="logo Facebook" title="facebook"></a></li>
-              <li><a href=""><img src="images/twitterViolet.png" alt="logo twitter" title="twitter"></a></li>
-              <li><a href=""><img src="images/linkedinViolet.png" alt="logo linkedIn" title="linkedIn"></a></li>
-              <li><a href=""><img src="images/RSSViolet.png" alt="logo RSS" title="Flux RSS"></a></li>
-
-            </ul>
-
+            <img src="images/Icones_social.png" alt="Logo des réseaux sociaux">
           </div>
         </div>
-      </section>
+      </div>
 
     </article>
 
-    <aside role="navigation" aria-label="navigation latérale">
+    <aside>
       <section class="event__future">
-        <h2><img src="/images/Ellipse.png" alt="Ellipse précedant le titre">Evénements à venir</h2>
-        <div class="event__future_stitre">
+        <h2><img src="/images/Ellipse.png">Evénements à venir</h2>
+        <div class="event_future_stitre">
           <h3>Janvier 2020</h3>
-          <img src="/images/mois.png" title="Aller à droite / Aller à gauche"
-            alt="Flèches permettant de slider à gauche et a droite.">
+          <img src="/images/mois.png" alt="">
         </div>
         <div class="event__aside" id="event1">
           <h4>Nom de l'événement</h4>
@@ -222,9 +160,9 @@
         </div>
       </section>
 
-      <section class="main__tags">
+      <div class="main__tags">
 
-        <h2><img src="/images/Ellipse.png" alt="ellipse ciculaire avant le titre">Hubs et Enjeux</h2>
+        <h2><img src="/images/Ellipse.png">Hubs et Enjeux</h2>
         <ul>
           <li class="tag Data">Data Science & AI</li>
           <li class="tag Cyber">Cyber & Security</li>
@@ -236,8 +174,13 @@
           <li class="tag Societe">Société</li>
           <li class="tag Indus">Industrie & Services</li>
         </ul>
-      </section>
+      </div>
     </aside>
+
+
+
+
+
 
   </main>
 
@@ -256,7 +199,7 @@
 
     <div class="footer__socials">
       <p>Suivez-nous sur les réseaux sociaux :</p>
-      <img src="images/Icones_social_transparent.png" alt="images reprenant les réseaux sociaux">
+      <img src="images/Icones_social_transparent.png">
 
     </div>
 
@@ -266,17 +209,19 @@
       <p><span>&copy;SYSTEMATIC 2020</span>. Creation <span>Agence Peach</span> </p>
     </div>
 
-    <nav class="footer__nav" aria-label="Navigation vers les différentes pages du site">
+    <div class="footer__nav">
       <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Glossaire</a></li>
-        <li><a href="#">Mentions légales</a></li>
+        <li>Contact</li>
+        <li>FAQ</li>
+        <li>Glossaire</li>
+        <li>Mentions légales</li>
       </ul>
 
-    </nav>
+    </div>
 
-
+    <!-- <div class="footer__fleche">
+    <p>^</p>
+  </div> -->
   </footer>
 
 </body>
