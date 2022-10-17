@@ -1,11 +1,21 @@
 /* Responsive */
 
 
-@media only screen and (min-width:700px) and (max-width:1153px) {
+@media only screen and (min-width:0px) and (max-width:576px) {
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+}
+@media only screen and (min-width:992px) and (max-width:1200px) {
+}
+
+@media only screen and (min-width:1200px) and (max-width:1400px) {
 
 
     aside {
-            width: 100%;
+          
             flex-direction: row;
             justify-content: space-around;
 

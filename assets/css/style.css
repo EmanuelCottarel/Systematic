@@ -1,6 +1,6 @@
+@import url(media.css);
 @import url(burger.css);
 @import url(fonts.css);
-@import url(mediaqueries.css);
 @import url(searchbar.css);
 /* RESET */
 * {
@@ -96,30 +96,35 @@ p span {
 
 /* BANNER */
 .header__banniere {
+  width: 100%;
+  height: auto;
+  background-image: url(../../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.header__banniere--text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 350px;
-  background-image: url(../../images/banner.png);
-  background-size: cover;
-  color: #ffffff;
-  text-transform: uppercase;
+  padding: 75px 0px;
 }
-.header__banniere h1 {
+.header__banniere--text h1 {
   font-size: 3rem;
   line-height: 2em;
 }
-.header__banniere ul {
+.header__banniere--text ul {
   list-style: none;
   display: flex;
 }
-.header__banniere li {
+.header__banniere--text li {
   display: block;
   margin-left: 10px;
 }
-.header__banniere li a {
+.header__banniere--text li a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -282,7 +287,6 @@ main__tags h2 {
 aside {
   margin: 25px;
   display: flex;
-  flex-flow: column wrap;
 }
 
 .event__aside {
@@ -308,6 +312,10 @@ aside {
 }
 
 /* EVENEMENTS A VENIR  */
+.event__future {
+  width: 330px;
+}
+
 .event__future img {
   padding-right: 10px;
 }
@@ -318,6 +326,7 @@ aside {
   justify-content: space-between;
   margin: 20px 0;
   align-items: center;
+  width: 330px;
 }
 .event__future_stitre h3 {
   width: 60%;
@@ -344,6 +353,10 @@ aside {
 }
 
 /* HUBS ET ENJEUX */
+.main__tags {
+  width: 330px;
+}
+
 .tag {
   border-radius: 3px;
   color: #ffffff;
